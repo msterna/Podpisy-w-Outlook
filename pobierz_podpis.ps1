@@ -2,7 +2,8 @@
 #
 #   Skrypt pobiera listę użytkowników z MSO 365 a następnie pobiera do pliku 
 #   .\podpisy.csv ustawienia skrzynek pocztowych użytkowników wraz z ich
-#   sygnaturami
+#   sygnaturami. 
+#   Najpierw ustaw zmienną $sciezka
 #
 #################################################################################
 
