@@ -2,14 +2,14 @@
 #
 #   
 #   Skrypt dodaje stopkę do skrzynek pocztowych użytkowników 
-#   Najpier ustaw zmienną $sciezka
 #   Następnie wstaw własne stopki w tekście w zmiennej $sygnatura_text 
 #   i w html'u w zmiennej $sygnatura_html
 #   Powodzenia
 #
 #################################################################################
 
-$sciezka = 'C:\Users\Maciej\Documents\Programowanie\Skrypt\Podpis w Outlooku'
+$moja_lokalizacja = Get-Location
+$sciezka = $moja_lokalizacja.Path
 Set-Location $sciezka
 
 if ((Test-Path -Path "$HOME\credentials.xmls") -eq $true) {

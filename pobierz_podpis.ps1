@@ -3,11 +3,11 @@
 #   Skrypt pobiera listę użytkowników z MSO 365 a następnie pobiera do pliku 
 #   .\podpisy.csv ustawienia skrzynek pocztowych użytkowników wraz z ich
 #   sygnaturami. 
-#   Najpierw ustaw zmienną $sciezka
 #
 #################################################################################
 
-$sciezka = 'C:\Users\Maciej\Documents\Programowanie\Skrypt\Podpis w Outlooku'
+$moja_lokalizacja = Get-Location
+$sciezka = $moja_lokalizacja.Path
 Set-Location $sciezka
 if ((Test-Path -Path "$sciezka\podpisy.csv") -eq $true) {
     Remove-Item -Path "$sciezka\podpisy.csv"
