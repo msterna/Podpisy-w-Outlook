@@ -37,8 +37,8 @@ foreach ($user in $users) {
     Get-MailboxMessageConfiguration $user.UserPrincipalName | Export-Csv -Append -NoTypeInformation -Path .\podpisy.csv -Encoding UTF8
 
     [pscustomobject]@{
-        Numer    = $numer;
-        Imię     = $user.FirstName;
-        Nazwisko = $user.LastName
+        Numer               = $numer ;
+        'Imię         '     = $user.FirstName ;
+        'Nazwisko         ' = $user.LastName
     }
 }

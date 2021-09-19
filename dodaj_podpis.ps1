@@ -40,7 +40,7 @@ foreach ($user in $podpisy) {
     
     [pscustomObject]@{
         Numer    = $numer ;
-        Identity = $user.Identity ;
+        'Identity          ' = $user.Identity ;
         Stan     = [bool]$user.SignatureText
     }
 }
